@@ -24,7 +24,14 @@
     max-width: 100%;               /* Pour que ça s'adapte à la taille de l'écran */
     height: auto;
   }
+  .zoom-photo {
+      width: 500px;
+      transition: transform 0.3s ease; /* animation fluide */
+    }
 
+    .zoom-photo:hover {
+      transform: scale(1.2); /* agrandit à 120% */
+    }
 
   </style>
 </head>
@@ -37,13 +44,13 @@
 <h1> Rémy l'Artiste </h1>
 </center>
 
-<table cellpadding="20px">
+<table cellpadding="50px">
 	<tr> <td width="30%"><video  width="700" height="400"  controls>
   <source src="video1.mp4" type="video/mp4" />
  
   
 </video> </td>  <td width="30%">
-<img src="dessin1.PNG" width="500" height="800"></td> 
+<img src="dessin1.png" width="500" height="800" class="zoom-photo"></td> 
 
 
 <td> à suivre</td>
